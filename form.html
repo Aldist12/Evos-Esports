@@ -1,0 +1,91 @@
+<body>
+    <form>
+        <fieldset>
+            <legend>Formulir Pendaftaran EVOS Esport Mobile Legends</legend>
+
+            <p>Nama : <input type="text" name="nama"></p>
+            <p>TTL: <input type="text" id="tempat" name="tempat"> <input type="date" id="tanggal" name="tanggal" min="1995-01-01" max="2006-12-31"></p>
+            <p>Alamat: <input type="text" name="alamat"></p>
+            <p>Nickname: <input type="text" name="nick"></p>
+            <p>Id: <input type="text" name="id"></p>
+            <p>
+                Jenis Kelamin :
+                <input type="radio" name="jk" value="laki-laki" checked />
+                Laki - Laki
+                <input type="radio" name="jk" value="perempuan" />
+                Perempuan
+            </p>
+            <p>
+                Role yang dikuasai : <br>
+                <input type="checkbox" name="jungler"> JUNGLER
+                <input type="checkbox" name="side"> SIDELANER
+                <input type="checkbox" name="offlaner"> OFFLANER
+                <input type="checkbox" name="support"> MIDLANER
+                <input type="checkbox" name="roam"> ROAMER
+            </p>
+            <p>
+                Rank Saat Ini :
+                <select>
+                    <option>Mythic Immortal</option>
+                    <option>Mythical Glory</option>
+                    <option>Mythical Honor</option>
+                    <option>Mythic</option>
+                </select>
+            </p>
+            <p>
+                Apa yang membuat kami harus memilih anda?: <br>
+                <textarea rows='10' cols='60' placeholder="Tulis jawaban Anda di sini"></textarea>
+            </p>
+            <p>
+                Lampirkan pas foto: <input type="file" name="foto">
+            </p>
+            <p><input type="submit" value="Daftarkan"></p>
+        </fieldset>
+    </form>
+
+    <style>
+        body {
+            background-image: url('https://img.esportsku.com/wp-content/uploads/2020/12/evos.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: white;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
+        body {
+            margin: 0 auto;
+            font-family: sans-serif;
+            background-color: aliceblue;
+        }
+        
+        form{
+            width: 100%;
+        }
+            
+        legend{
+            text-align: center;
+        }
+        .back {
+            margin-top: 20px; /* Meningkatkan jarak atas tombol */
+            display: inline-block;
+            background-color: #1e8db5; /* Warna latar belakang tombol */
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px; /* Menyesuaikan ukuran padding untuk memberikan ruang di sekitar teks tombol */
+            border: none;
+            border-radius: 5px; /* Mengatur sudut bulat tombol */
+            cursor: pointer;
+            transition: background-color 0.3s; /* Efek transisi saat hover */
+        }
+        
+        .back:hover {
+            background-color: #f15945; /* Warna latar belakang saat tombol dihover */
+        }
+        
+        
+    </style>
+
+    <button class="back"><a href="index.html">Home</a></button>
+</body>
